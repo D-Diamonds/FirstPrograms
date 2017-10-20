@@ -1,7 +1,9 @@
 /*
 * LetterGradeLandsman class
 *
-*
+* This program prints out the
+* letter grade corresponding
+* with a user's inputted percentage
 *
 * Author: Josh Landsman
 */
