@@ -6,7 +6,7 @@
 *
 * Author: Josh Landsman
 */
-class Gradeaverager {
+class GradeAverager {
     public static void main(String[] args) {
 
         // create three int variables for the three grades
