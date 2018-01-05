@@ -28,14 +28,15 @@ public class GuessTheNumberLandsman {
         minNum = 1;
         maxNum = 1000;
         playing = "Y";
-        count = 1;
 
         // Game
         System.out.println("Welcome to the number guessing game.");
 
         while (playing.toUpperCase().equals("Y")) {
             // Random number generator
-            randomNum = (int)(Math.random() * (maxNum - minNum) + minNum);
+            randomNum = (int)(Math.random() * (maxNum - minNum + 1) + minNum);
+            System.out.println(randomNum);
+            count = 1;
 
             while (playing.toUpperCase().equals("Y")) {
 
@@ -63,12 +64,12 @@ public class GuessTheNumberLandsman {
                     // Guess correct
                     else {
                         System.out.println("You guessed the secret number " + randomNum + "! It took you " + count + " attempts.");
-                        playing = "n";
+                        break;
                     }
                 }
 
                 // Give up
-                else
+                if (playing.toUpperCase().equals("N"))
                     System.out.println("That is unfortunate that you gave up. The secret number was " + randomNum + ".");
 
                 count++;
